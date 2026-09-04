@@ -24,7 +24,7 @@ NETMODE DHCP_CLIENT
 LED B SOLID
 # Change MAC address
 ifconfig eth0 down
-ifconfig eth0 hw ether 7c:dd:90:f3:9f:5d
+ifconfig eth0 hw ether 02:00:00:00:00:42
 ifconfig eth0 up
 LED C SOLID
 

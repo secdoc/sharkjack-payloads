@@ -11,7 +11,7 @@
 # LED FAIL (Red blink)... Unable to ping specified resource
 # LED FINISH (Green blink to solid)... Successfully pinged resource
 
-RESOURCE_TO_PING="192.168.86.27"
+RESOURCE_TO_PING="192.0.2.27"
 
 LED SETUP
 # Set NETMODE to DHCP_CLIENT for Shark Jack v1.1.0+

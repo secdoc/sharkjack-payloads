@@ -88,8 +88,8 @@ TODAY=$(date +%Y%m%d)
 START_TIME=$(date)
 BATTERY_STATUS=$(BATTERY)
 HOSTNAME="shark"
-MAC_ADDRESS="4a:3f:6d:db:ba:d8"
-CUSTOM_NAME_SERVER="192.168.10.1"
+MAC_ADDRESS="02:00:00:00:00:43"
+CUSTOM_NAME_SERVER="192.0.2.53"
 RESOLV_CONF_FILE="/etc/resolv.conf"
 RESOLV_CONF_AUTO_FILE="/tmp/resolv.conf.auto"
 RESOLV_CONF_TMP_FILE="/tmp/resolv.conf"
@@ -410,7 +410,7 @@ function GRAB_NMAP_LOOT() {
 		### Adding -oA nmap option to scan option
 		NMAP_OPTIONS_ACTIVE_HOSTS="${NMAP_OPTIONS_ACTIVE_HOSTS} -oA ${LOOT_DIR}/nmap-${SCAN_COUNT}-${TODAY}"
 		touch $NMAP_LOOT_FILE
-		#ACTIVE_HOSTS=( $(nmap $NMAP_QUICKSCAN 192.168.1.0/24 | grep "Nmap scan report for" | awk {'print $5'} | awk '{print}' ORS='\t' | sed 's/.$//') ) # Nmap ping scan output as an array of ip addresses
+		#ACTIVE_HOSTS=( $(nmap $NMAP_QUICKSCAN 192.0.2.0/24 | grep "Nmap scan report for" | awk {'print $5'} | awk '{print}' ORS='\t' | sed 's/.$//') ) # Nmap ping scan output as an array of ip addresses
 		ACTIVE_HOSTS=( $(arp-scan --localnet | tail -n +3 | head -n -3 | awk {'print $1'} | awk '{print}' ORS='\t' | sed 's/.$//') ) # Arp-scan output as an array of ip addresses
 		echo "****************************************************************************************************" >> $NMAP_LOOT_FILE
 		echo "Nmap scan ${#ACTIVE_HOSTS[@]} hosts with nmap options: \"$NMAP_OPTIONS_ACTIVE_HOSTS\"" >> $NMAP_LOOT_FILE

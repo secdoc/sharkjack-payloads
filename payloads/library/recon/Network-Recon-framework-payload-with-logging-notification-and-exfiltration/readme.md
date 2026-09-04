@@ -63,8 +63,8 @@ Variable                       | Description                                    
 ------------------------------ | -------------------------------------------------------------------------------- | ---
 LOOT_DIR_ROOT                  | Folder on Shark Jack to store loot files and log files                           | {folder e.g. `/root/loot/network-recon`}
 HOSTNAME                       | Custom hostname for the Shark Jack                                               | {e.g. `shark`}
-MAC_ADDRESS                    | Custom MAC address for the Shark Jack                                            | {e.g. `4a:3f:6d:db:ba:d8`}
-CUSTOM_NAME_SERVER             | Custom name server to be used by the Shark Jack                                  | {e.g. `192.168.10.1`}
+MAC_ADDRESS                    | Custom MAC address for the Shark Jack                                            | {e.g. `02:00:00:00:00:43`}
+CUSTOM_NAME_SERVER             | Custom name server to be used by the Shark Jack                                  | {e.g. `192.0.2.53`}
 RESOLV_CONF_FILE               | Path to `resolv.conf` file                                                       | {e.g. `/etc/resolv.conf`}
 RESOLV_CONF_AUTO_FILE          | Path to `resolv.conf.auto` file                                                  | {e.g. `/tmp/resolv.conf.auto`}
 RESOLV_CONF_TMP_FILE           | Path to `resolv.conf` temporary file                                             | {e.g. `/tmp/resolv.conf`}

@@ -12,7 +12,7 @@
 #
 # Example: Plug the Shark Jack into your home network, wait ~45 seconds and it will blink cyan 
 # four times, pause, then blink twice. This indicates that the last octet of its IP address is
-# .42 - so if your home LAN is 192.168.1.0, then your Shark Jack should be found at 192.168.1.42
+# .42 - so if your home LAN is 192.0.2.0, then your Shark Jack should be found at 192.0.2.42
 #
 # If one of the octets is zero this will be represented as solid for 1 second.
 #

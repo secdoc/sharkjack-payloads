@@ -40,7 +40,7 @@ CLOUD_C2_PROVISION="/etc/device.config"
 BACKUP_FOLDERS=( "/root/payload" "/root/loot" "/usr/share/arp-scan" )		# Add folders to be backed up here!
 BACKUP_FILES=( "/etc/device.config" )		# Add files to be backed up here!
 BACKUP_DESTINATION_USER="{username}"			# Generate a ssh key (ssh-keygen) on the destination host and copy it (~/.ssh/id_rsa_pub) to the SharkJack (~/.ssh/authorized/keys) in order to bypass password!
-BACKUP_DESTINATION_HOST="192.168.10.1"
+BACKUP_DESTINATION_HOST="192.0.2.53"
 BACKUP_DESTINATION_DIR_ROOT="/some/destination/folder/for/backup"
 
 # Exfiltrate and notification variables

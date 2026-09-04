@@ -39,7 +39,7 @@ BACKUP_DIR_ROOT              | Folder on Shark Jack to store backup zip files an
 BACKUP_FOLDERS               | Array containing folders to be backed up                                         | {array e.g. `( "/root/payload" "/root/loot" "/usr/share/arp-scan" )`}
 BACKUP_FILES                 | Array containing files to be backed up                                           | {array e.g. `( "/etc/device.config" )`}
 BACKUP_DESTINATION_USER      | Username for remote host for SCP exfiltration                                    | {username e.g. `root`}
-BACKUP_DESTINATION_HOST      | Hostname or IP address for remote host for SCP exfiltration                      | {hostname/ip e.g. `192.168.10.1`}
+BACKUP_DESTINATION_HOST      | Hostname or IP address for remote host for SCP exfiltration                      | {hostname/ip e.g. `192.0.2.53`}
 BACKUP_DESTINATION_DIR_ROOT  | Folder on remote host for storing back zip file and log file                     | {folder e.g. `/root/downloads/backup`}
 PUSHOVER_API_POST_URL        | Pushover post API url                                                            | https://api.pushover.net/1/messages.json
 PUSHOVER_APPLICATION_TOKEN   | Pushover application token                                                       | {your-application-token}
@@ -93,7 +93,7 @@ Variable                     | Description                                      
 ---------------------------- | -------------------------------------------------------------------------------- | ---
 RESTORE_DIR_ROOT             | Temporary folder on Shark Jack for unzipping back zip file and storing log file  | {folder e.g. `/root/restore`}
 RESTORE_DESTINATION_USER     | Username for remote host for SCP exfiltration                                    | {username e.g. `root`}
-RESTORE_DESTINATION_HOST     | Hostname or IP address for remote host for SCP exfiltration                      | {hostname/ip e.g. `192.168.10.1`}
+RESTORE_DESTINATION_HOST     | Hostname or IP address for remote host for SCP exfiltration                      | {hostname/ip e.g. `192.0.2.53`}
 RESTORE_DESTINATION_DIR_ROOT | Folder on remote host for storing log file                                       | {folder e.g. `/root/downloads/backup`}
 PUSHOVER_API_POST_URL        | Pushover post API url                                                            | `https://api.pushover.net/1/messages.json`
 PUSHOVER_APPLICATION_TOKEN   | Pushover application token                                                       | {your-application-token}

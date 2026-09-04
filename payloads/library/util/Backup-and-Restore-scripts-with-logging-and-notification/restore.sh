@@ -44,7 +44,7 @@ CLOUD_C2_PROVISION="/etc/device.config"
 # Restore variables
 OPKG_PACKAGES_TO_INSTALL=( "unzip" "zip" "nano" "curl" "lldpd" "bind-dig" "bind-host" "libustream-openssl" )
 RESTORE_DESTINATION_USER="{username}"			# Generate a ssh key (ssh-keygen) on the destination host and copy it (~/.ssh/id_rsa_pub) to the SharkJack (~/.ssh/authorized/keys) in order to bypass password!
-RESTORE_DESTINATION_HOST="192.168.10.1"
+RESTORE_DESTINATION_HOST="192.0.2.53"
 RESTORE_DESTINATION_DIR_ROOT="/some/destination/folder/for/log_file"
 
 # Exfiltrate and notification variables
